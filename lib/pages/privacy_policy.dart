@@ -12,6 +12,9 @@ class PrivacyPolicyScreen extends StatelessWidget {
         actions: [
           IconButton(onPressed: () => Navigator.pop(context), icon: Icon(Icons.arrow_back))
         ],
+        iconTheme: IconThemeData(
+            color: Colors.white
+        ),
       ),
       body: const Padding(
         padding: EdgeInsets.all(16),

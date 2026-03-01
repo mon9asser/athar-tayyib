@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'dart:io';
+import 'package:pdf/widgets.dart' as pw;
+import 'dart:typed_data';
+import 'package:printing/printing.dart';
 import 'incs/sounds.dart';
 import 'incs/mp3.dart';
 import 'incs/all_akur.dart';
@@ -68,6 +72,7 @@ class _EveningsAzkurState extends State<EveningsAzkur> {
                                     fontSize: 20,
                                   ),
                                 ),
+                                SizedBox(height: 7) 
                               ]
                           ),
 
@@ -259,8 +264,16 @@ class _EveningsAzkurState extends State<EveningsAzkur> {
           ],
         ),
       ),
-
-
+      
+      /*
+      floatingActionButton: FloatingActionButton(onPressed: () => Navigator.pushNamed(context, "/pdf", arguments: {
+        "title": "طباعة آذكار المساء",
+        "data" : Evening
+      }), child: Icon(Icons.file_download, color: Colors.white,),
+        backgroundColor:   Color(0XFFAC527E),
+        focusColor:  Color(0XFFFEF8E7),
+      ),
+      */
 
     );
   }

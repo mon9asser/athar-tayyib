@@ -8,7 +8,7 @@ import 'pages/morning-azkur.dart';
 import 'pages/pray-azkur.dart';
 import 'pages/sleeping-azkur.dart';
 import 'pages/tasabeeh.dart';
-
+import 'pages/convert_pdf.dart';
 
 import 'pages/contact.dart';
 import 'pages/terms_conidtions.dart';
@@ -48,6 +48,8 @@ class AzkurApp extends StatelessWidget {
         "/contact": (context) => ContactScreen(),
         "/privacy_policy": (context) => PrivacyPolicyScreen(),
         "/terms_conidtions": (context) => TermsConditionScreen(),
+
+        "/pdf": (context) => PdfPreviewPage()
 
       },
     );

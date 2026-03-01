@@ -8,7 +8,10 @@ class TermsConditionScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("الشروط والأحكام", style: TextStyle(color:Colors.white),),
-        backgroundColor: const Color(0XFFAC527E),
+        backgroundColor: const Color(0XFFAC527E), 
+        iconTheme: IconThemeData(
+          color: Colors.white
+        ),
       ),
       body: const Padding(
         padding: EdgeInsets.all(16),
