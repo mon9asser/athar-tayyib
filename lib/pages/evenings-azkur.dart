@@ -61,15 +61,16 @@ class _EveningsAzkurState extends State<EveningsAzkur> {
                         children: [
                           Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text("استعن بهذه الأذكار لتسبيح الله", style: TextStyle(color: Colors.black, fontSize: 18, fontWeight: FontWeight.w900)),
+                                Text("استعن بهذه الأذكار لتسبيح الله", style: TextStyle(color: Colors.black, fontSize: 12, fontWeight: FontWeight.w900)),
                                 SizedBox(height: 7),
 
                                 Text(
                                   "عدد الاذكار: ${Evening.length}",
                                   style: TextStyle(
                                     color: Colors.grey[600],
-                                    fontSize: 20,
+                                    fontSize: 16,
                                   ),
                                 ),
                                 SizedBox(height: 7) 

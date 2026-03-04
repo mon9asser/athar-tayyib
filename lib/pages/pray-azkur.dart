@@ -57,15 +57,16 @@ class _AfterPrayAzkurState extends State<AfterPrayAzkur> {
                         children: [
                           Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text(" نور للقلب… وأجر دائم بإذن الله", style: TextStyle(color: Colors.black, fontSize: 18, fontWeight: FontWeight.w900)),
+                                Text(" نور للقلب… وأجر دائم بإذن الله", style: TextStyle(color: Colors.black, fontSize: 14, fontWeight: FontWeight.w900)),
                                 SizedBox(height: 7),
 
                                 Text(
                                   "عدد الاذكار:  ${Pray.length}",
                                   style: TextStyle(
                                     color: Colors.grey[600],
-                                    fontSize: 20,
+                                    fontSize: 16,
                                   ),
                                 ),
                               ]

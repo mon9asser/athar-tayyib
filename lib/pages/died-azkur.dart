@@ -56,10 +56,11 @@ class _DiedDoaState extends State<DiedDoa> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text("دعاء صوتي", style: TextStyle(color: Colors.white, fontSize: 20)),
-                            SizedBox(height: 7),
-                            Text("للمرحوم  هشام سالم", style: TextStyle(color: Colors.white, fontSize: 23, fontWeight: FontWeight.w900)),
+                            Text("دعاء صوتي", style: TextStyle(color: Colors.white, fontSize: 17)),
+                            SizedBox(height: 4),
+                            Text("للمرحوم  هشام سالم", style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w900)),
                           ]
                       ),
 

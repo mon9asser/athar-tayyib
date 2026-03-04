@@ -57,15 +57,16 @@ class _TasabeehAzkarState extends State<TasabeehAzkar> {
                         children: [
                           Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text("سبّح ربك بالعشيّةِ والإبكار 🌿", style: TextStyle(color: Colors.black, fontSize: 18, fontWeight: FontWeight.w900)),
+                                Text("سبّح ربك بالعشيّةِ والإبكار 🌿", style: TextStyle(color: Colors.black, fontSize: 14, fontWeight: FontWeight.w900)),
                                 SizedBox(height: 7),
 
                                 Text(
                                   "عدد الاذكار:  ${Tasabeeh.length}",
                                   style: TextStyle(
                                     color: Colors.grey[600],
-                                    fontSize: 20,
+                                    fontSize: 16,
                                   ),
                                 ),
                               ]

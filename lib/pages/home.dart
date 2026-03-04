@@ -64,18 +64,16 @@ class _HomeState extends State<Home> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      spacing: 5,
+                      spacing: 8,
                       children: [
                         SizedBox(height: 20,),
                         Text("الأذكار", textAlign: TextAlign.center, style: TextStyle(fontSize: 35, fontWeight: FontWeight.w900, color: Color(0XFFAC527E) ),),
-                        SizedBox(height: 20,),
+
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-
-                            // Left Column
-                            TextButton(
+                            Expanded(child: TextButton(
                                 onPressed: () => Navigator.pushNamed(context, "/died_doa"),
                                 child: Container(
                                   decoration: BoxDecoration(
@@ -84,14 +82,13 @@ class _HomeState extends State<Home> {
                                   ),
                                   alignment: Alignment.center,
                                   height: 120,
-                                  width: 180,
                                   child: Text("دعاء للمتوفى", textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),
                                 )
-                            ),
+                            ),),
 
                             SizedBox(width: 0), // middle spacing
 
-                            TextButton(
+                            Expanded(child: TextButton(
                                 onPressed: () => Navigator.pushNamed(context, "/azkur_morning"),
                                 child: Container(
                                   decoration: BoxDecoration(
@@ -100,10 +97,9 @@ class _HomeState extends State<Home> {
                                   ),
                                   alignment: Alignment.center,
                                   height: 120,
-                                  width: 180,
                                   child: Text("أذكار الصباح", textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),
                                 )
-                            ),
+                            ),)
                           ],
                         ),
 
@@ -114,8 +110,7 @@ class _HomeState extends State<Home> {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
 
-                            // Left Column
-                            TextButton(
+                            Expanded(child:  TextButton(
                                 onPressed: () => Navigator.pushNamed(context, "/azkur_slleeping"),
                                 child: Container(
                                   decoration: BoxDecoration(
@@ -124,14 +119,13 @@ class _HomeState extends State<Home> {
                                   ),
                                   alignment: Alignment.center,
                                   height: 120,
-                                  width: 180,
                                   child: Text(("أذكار النوم"), textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),
                                 )
-                            ),
+                            ),),
 
                             SizedBox(width: 0), // middle spacing
 
-                            TextButton(
+                            Expanded(child: TextButton(
                                 onPressed: () => Navigator.pushNamed(context, "/azkur_evening"),
                                 child: Container(
                                   decoration: BoxDecoration(
@@ -143,7 +137,7 @@ class _HomeState extends State<Home> {
                                   width: 180,
                                   child: Text("أذكار المساء", textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),
                                 )
-                            ),
+                            ),)
                           ],
                         ),
 
@@ -152,8 +146,7 @@ class _HomeState extends State<Home> {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
 
-                            // Left Column
-                            TextButton(
+                            Expanded(child: TextButton(
                                 onPressed: () => Navigator.pushNamed(context, "/azkur_tasabeeh"),
                                 child: Container(
                                   decoration: BoxDecoration(
@@ -162,14 +155,13 @@ class _HomeState extends State<Home> {
                                   ),
                                   alignment: Alignment.center,
                                   height: 120,
-                                  width: 180,
                                   child: Text(("تسابيح"), textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),
                                 )
-                            ),
+                            ),),
 
                             SizedBox(width: 0), // middle spacing
 
-                            TextButton(
+                            Expanded(child: TextButton(
                                 onPressed: () => Navigator.pushNamed(context, "/azkur_after_pray"),
                                 child: Container(
                                   decoration: BoxDecoration(
@@ -181,7 +173,7 @@ class _HomeState extends State<Home> {
                                   width: 180,
                                   child: Text("أذكار بعد الصلاة", textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),
                                 )
-                            ),
+                            ),)
                           ],
                         ),
 

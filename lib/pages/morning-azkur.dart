@@ -57,15 +57,16 @@ class _MorningAzkurState extends State<MorningAzkur> {
                         children: [
                           Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text("واذكر ربك إذا نسيت", style: TextStyle(color: Colors.black, fontSize: 23, fontWeight: FontWeight.w900)),
+                                Text("واذكر ربك إذا نسيت", style: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.w900)),
                                 SizedBox(height: 7),
 
                                 Text(
                                   "عدد الاذكار: ${Morning.length}",
                                   style: TextStyle(
                                     color: Colors.grey[600],
-                                    fontSize: 20,
+                                    fontSize: 17,
                                   ),
                                 ),
                               ]

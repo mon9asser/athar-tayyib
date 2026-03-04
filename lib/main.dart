@@ -23,11 +23,11 @@ class AzkurApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        textTheme: GoogleFonts.cairoTextTheme(),
-      ),
-      debugShowCheckedModeBanner: false,
 
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        fontFamily: "Cairo",
+      ),
       builder: (context, child) {
         return Directionality(
           textDirection: TextDirection.rtl,
