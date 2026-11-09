@@ -50,7 +50,7 @@ class _TasabeehAzkarState extends State<TasabeehAzkar> {
                   ),
                 ),
                 child: Padding(
-                    padding: EdgeInsets.all(20),
+                    padding: EdgeInsets.all(15),
                     child: Row(
                         spacing: 20,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -59,14 +59,14 @@ class _TasabeehAzkarState extends State<TasabeehAzkar> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text("سبّح ربك بالعشيّةِ والإبكار 🌿", style: TextStyle(color: Colors.black, fontSize: 14, fontWeight: FontWeight.w900)),
+                                Text("سبّح ربك بالعشيّةِ والإبكار 🌿", style: TextStyle(color: Colors.black, fontSize: 12, fontWeight: FontWeight.w900)),
                                 SizedBox(height: 7),
 
                                 Text(
                                   "عدد الاذكار:  ${Tasabeeh.length}",
                                   style: TextStyle(
                                     color: Colors.grey[600],
-                                    fontSize: 16,
+                                    fontSize: 14,
                                   ),
                                 ),
                               ]

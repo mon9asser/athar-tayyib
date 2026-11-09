@@ -50,7 +50,7 @@ class _SleepingAzkurState extends State<SleepingAzkur> {
                   ),
                 ),
                 child: Padding(
-                    padding: EdgeInsets.all(20),
+                    padding: EdgeInsets.all(15),
                     child: Row(
                         spacing: 20,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -59,14 +59,14 @@ class _SleepingAzkurState extends State<SleepingAzkur> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text("قبل أن نغلق أعيننا.. نذكر الله", style: TextStyle(color: Colors.black, fontSize: 15, fontWeight: FontWeight.w900)),
+                                Text("قبل أن نغلق أعيننا.. نذكر الله", style: TextStyle(color: Colors.black, fontSize: 12, fontWeight: FontWeight.w900)),
                                 SizedBox(height: 7),
 
                                 Text(
                                   "عدد الاذكار:  ${Sleeping.length}",
                                   style: TextStyle(
                                     color: Colors.grey[600],
-                                    fontSize: 17,
+                                    fontSize: 14,
                                   ),
                                 ),
                               ]

@@ -50,7 +50,7 @@ class _DiedDoaState extends State<DiedDoa> {
                 ),
               ),
               child: Padding(
-                padding: EdgeInsets.all(20),
+                padding: EdgeInsets.all(10),
                 child: Row(
                     spacing: 20,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
