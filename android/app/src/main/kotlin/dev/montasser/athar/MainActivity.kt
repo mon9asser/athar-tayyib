@@ -1,4 +1,4 @@
-package com.example.askur
+package dev.montasser.athar
 
 import io.flutter.embedding.android.FlutterActivity
 
