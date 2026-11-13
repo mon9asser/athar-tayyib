@@ -40,7 +40,6 @@ class _DiedDoaState extends State<DiedDoa> {
           children: [
             SizedBox(height: 5),
             Container(
-              height: 120,
               decoration: BoxDecoration(
                 color: Colors.red,
                 borderRadius: BorderRadius.all(Radius.circular(10)),
@@ -49,29 +48,38 @@ class _DiedDoaState extends State<DiedDoa> {
                   fit: BoxFit.cover,
                 ),
               ),
+
+
               child: Padding(
-                padding: EdgeInsets.all(10),
+                padding: EdgeInsets.all(20),
                 child: Row(
-                    spacing: 20,
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Column(
+                  spacing: 20,
+                  children: [
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text("دعاء صوتي", style: TextStyle(color: Colors.white, fontSize: 17)),
-                            SizedBox(height: 4),
-                            Text("للمرحوم  هشام سالم", style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w900)),
-                          ]
+                        children: [
+                          Text("دعاء صوتي للمرحوم",
+                              style: TextStyle(color: Colors.white, fontSize: 17)),
+                          SizedBox(height: 4),
+                          Text("هشام سالم",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w900)),
+                        ],
                       ),
-
-                      SoundMp3(
-                        path:  'mp4/doa.mp3',
-                        color: Color(0XFFFEF8E7),
-                      )
-
-                    ]
-                )
+                    ),
+                    SoundMp3(
+                      path: 'mp4/doa.mp3',
+                      color: Color(0XFFFEF8E7),
+                    ),
+                  ],
+                ),
               ),
+
+
             ),
             SizedBox(height: 5),
             Container(
@@ -116,24 +124,27 @@ class _DiedDoaState extends State<DiedDoa> {
                         margin: EdgeInsets.symmetric(vertical: 10),
                         padding: EdgeInsets.all(20),
                         child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(track['title'] ?? "", style: TextStyle( color: Color(0XFFAC527E), fontWeight: FontWeight.w800, fontSize: 18),),
-                                SizedBox(height: 8,),
-                                Text(durationText, style: TextStyle(color: Colors.grey[600]),),
-                              ],
-                            ),
-                            SizedBox(width: 10),
-                            SoundMp3(
-                              path: track['path'],
-                              color: Color(0XFFAC527E),
-                            ),
-                          ],  
-                    ));
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Expanded(child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(track['title'] ?? "", style: TextStyle( color: Color(0XFFAC527E), fontWeight: FontWeight.w800, fontSize: 18),),
+                                  SizedBox(height: 8,),
+                                  Text(durationText, style: TextStyle(color: Colors.grey[600]),),
+                                ],
+                              )),
+                              SizedBox(width: 10),
+                              SoundMp3(
+                                path: track['path'],
+                                color: Color(0XFFAC527E),
+                              ),
+                            ],
+                        )
+
+
+                    );
                   },
                 );
               }).toList(),

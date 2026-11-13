@@ -40,7 +40,6 @@ class _SleepingAzkurState extends State<SleepingAzkur> {
             children: [
               SizedBox(height: 5),
               Container(
-                height: 120,
                 decoration: BoxDecoration(
                   color: Colors.white.withOpacity(0.46),
                   borderRadius: BorderRadius.all(Radius.circular(10)),
@@ -49,34 +48,51 @@ class _SleepingAzkurState extends State<SleepingAzkur> {
                     width: 2,           // border width
                   ),
                 ),
+
+
                 child: Padding(
-                    padding: EdgeInsets.all(15),
-                    child: Row(
-                        spacing: 20,
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text("قبل أن نغلق أعيننا.. نذكر الله", style: TextStyle(color: Colors.black, fontSize: 12, fontWeight: FontWeight.w900)),
-                                SizedBox(height: 7),
-
-                                Text(
-                                  "عدد الاذكار:  ${Sleeping.length}",
-                                  style: TextStyle(
-                                    color: Colors.grey[600],
-                                    fontSize: 14,
-                                  ),
-                                ),
-                              ]
-                          ),
-
-                          Image(image: AssetImage("assets/images/sleeping-azkar.jpg"))
-
-                        ]
-                    )
+                  padding: EdgeInsets.all(20),
+                  child: Row(
+                    spacing: 20,
+                    children: [
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "قبل أن نغلق أعيننا.. نذكر الله",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w900,
+                              ),
+                            ),
+                            SizedBox(height: 7),
+                            Text(
+                              "عدد الاذكار:  ${Sleeping.length}",
+                              style: TextStyle(
+                                color: Colors.grey[600],
+                                fontSize: 14,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(10),
+                        child: Image(
+                          image: AssetImage("assets/images/sleeping-azkar.jpg"),
+                          width: 80,
+                          height: 80,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
+
+
               ),
 
               SizedBox(height: 10),
@@ -100,7 +116,7 @@ class _SleepingAzkurState extends State<SleepingAzkur> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
-                            Text(item["description"],style: TextStyle(color: item["count"] == 0 ? Colors.grey[300] : Color(0XFFAC527E), fontSize: 18, fontWeight: FontWeight.w500, textBaseline: TextBaseline.ideographic)),
+                            Text(item["description"],style: TextStyle(color: item["count"] == 0 ? Colors.grey[300] : Color(0XFFAC527E), fontSize: 20, height: 1.8, fontWeight: FontWeight.w500, textBaseline: TextBaseline.ideographic)),
                             Container(
                               decoration: BoxDecoration(
                                   border: Border.all(

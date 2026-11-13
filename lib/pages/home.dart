@@ -134,7 +134,6 @@ class _HomeState extends State<Home> {
                                   ),
                                   alignment: Alignment.center,
                                   height: 120,
-                                  width: 180,
                                   child: Text("أذكار المساء", textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),
                                 )
                             ),)
@@ -170,7 +169,6 @@ class _HomeState extends State<Home> {
                                   ),
                                   alignment: Alignment.center,
                                   height: 120,
-                                  width: 180,
                                   child: Text("أذكار بعد الصلاة", textAlign: TextAlign.center, style: TextStyle(fontSize: 20),),
                                 )
                             ),)
