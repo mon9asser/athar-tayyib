@@ -5,7 +5,7 @@
 ## Features
 
 - **The Holy Quran:** Read and reflect on the words of Allah.
-- **Daily Adhkar:** Morning, evening, and daily supplications.
+- **Daily Azkar:** Morning, evening, and daily supplications.
 - **Tasbeeh:** Remember Allah through digital Tasbeeh.
 - **Prophetic Hadiths:** Explore the sayings and teachings of Prophet Muhammad (peace be upon him).
 
