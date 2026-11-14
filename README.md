@@ -1,17 +1,19 @@
-# askur
+# Athar Tayyib – Islamic App
 
-A new Flutter project.
+**Athar Tayyib** is an Arabic Islamic application designed to help Muslims remember Allah and maintain their daily acts of worship.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- **The Holy Quran:** Read and reflect on the words of Allah.
+- **Daily Adhkar:** Morning, evening, and daily supplications.
+- **Tasbeeh:** Remember Allah through digital Tasbeeh.
+- **Prophetic Hadiths:** Explore the sayings and teachings of Prophet Muhammad (peace be upon him).
 
-A few resources to get you started if this is your first Flutter project:
+## Our Mission
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Our goal is to make Islamic resources easily accessible and encourage daily remembrance of Allah.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# flutter-app-azkar-sadka
+May Allah accept this work and make it a source of ongoing reward for everyone who contributes to sharing it.
+
+## Download
+[Download Athar Tayyib on Google Play](https://play.google.com/store/apps/details?id=dev.montasser.athar)
